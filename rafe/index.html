@@ -1,0 +1,154 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sadi Al Rafe</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+    <style>
+      body {
+        background: #f0fff0;
+        font-family: "Verdana", sans-serif;
+        color: #333;
+      }
+      header {
+        background-color: #98fb98;
+        padding: 60px 0;
+      }
+      nav {
+        background-color: #3cb371;
+      }
+      nav a {
+        color: #fff;
+        margin: 0 10px;
+        text-decoration: none;
+        font-weight: bold;
+      }
+      .card-custom {
+        background: #ffffff;
+        border: 1px solid #c1e1c1;
+        border-radius: 10px;
+        padding: 15px;
+      }
+      .tab-content {
+        background: #ffffff;
+        padding: 20px;
+        border-radius: 10px;
+      }
+      footer {
+        background-color: #90ee90;
+        padding: 20px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="py-3 text-center">
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <header class="">
+      <div class="container d-flex justify-content-between align-items-center">
+        <div>
+          <h1 class="fw-bold" data-aos="fade-right">Sadi Al Rafe</h1>
+          <p data-aos="fade-right" data-aos-delay="100">
+            UI/UX Designer | Illustrator
+          </p>
+        </div>
+        <img
+          src="./images/reeni-main-demo.png"
+          class="rounded-circle"
+          alt="Sadi Al Rafe"
+        />
+      </div>
+    </header>
+    <main class="container py-5">
+      <section id="about">
+        <h2>About Me</h2>
+        <p>
+          Creative UI/UX designer crafting intuitive and clean digital
+          interfaces.
+        </p>
+      </section>
+      <section id="services">
+        <h2>Services</h2>
+        <div class="row">
+          <div class="col-md-4"><div class="card-custom">App Design</div></div>
+          <div class="col-md-4"><div class="card-custom">Wireframing</div></div>
+          <div class="col-md-4"><div class="card-custom">Prototyping</div></div>
+        </div>
+      </section>
+      <section id="projects">
+        <h2>Projects</h2>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card-custom">Finance App UI</div>
+          </div>
+          <div class="col-md-4">
+            <div class="card-custom">E-learning Dashboard</div>
+          </div>
+          <div class="col-md-4">
+            <div class="card-custom">Mobile Game UI</div>
+          </div>
+        </div>
+      </section>
+      <section id="skills">
+        <h2>Skills</h2>
+        <ul class="nav nav-tabs" id="skillsTab3">
+          <li class="nav-item">
+            <button
+              class="nav-link active"
+              data-bs-toggle="tab"
+              data-bs-target="#s1"
+            >
+              Figma
+            </button>
+          </li>
+          <li class="nav-item">
+            <button class="nav-link" data-bs-toggle="tab" data-bs-target="#s2">
+              Adobe XD
+            </button>
+          </li>
+          <li class="nav-item">
+            <button class="nav-link" data-bs-toggle="tab" data-bs-target="#s3">
+              Sketch
+            </button>
+          </li>
+        </ul>
+        <div class="tab-content mt-3">
+          <div class="tab-pane fade show active" id="s1">
+            Expert in designing full-fledged mobile app UIs in Figma.
+          </div>
+          <div class="tab-pane fade" id="s2">
+            Experience in creating wireframes and UI prototypes in Adobe XD.
+          </div>
+          <div class="tab-pane fade" id="s3">
+            Well-versed in Sketch for macOS UI workflows.
+          </div>
+        </div>
+      </section>
+      <section id="contact">
+        <h2>Contact Me</h2>
+        <form style="max-width: 600px" class="mx-auto">
+          <input class="form-control mb-2" placeholder="Name" />
+          <input class="form-control mb-2" placeholder="Email" />
+          <textarea class="form-control mb-2" placeholder="Message"></textarea>
+          <button class="btn btn-success w-100">Send</button>
+        </form>
+      </section>
+    </main>
+    <footer>&copy; 2025 Sadi Al Rafe</footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>

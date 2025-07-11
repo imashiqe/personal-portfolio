@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tamim Ahmed | Portfolio</title>
+
+    <!-- AOS Animation CSS -->
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+    <!-- Boxicons for icons -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="logo">
+        <div class="logo-icon"></div>
+        Tamim
+      </div>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button class="btn">Contact Us</button>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" data-aos="fade-up">
+      <div class="hero-text">
+        <h1>Hello, I'm <br />Tamim Ahmed</h1>
+        <p>
+          React Native Developer with 4+ years experience in building beautiful
+          and efficient mobile applications for startups and enterprises.
+        </p>
+
+        <div class="hero-buttons">
+          <button class="btn-main">View More</button>
+          <button class="btn-outline">Download CV &#8681;</button>
+        </div>
+      </div>
+      <div class="hero-img">
+        <img src="./images/reeni-main-demo.png" alt="Tamim" />
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" data-aos="fade-right">
+      <h2 class="section-title">About Me</h2>
+      <p style="text-align: center; max-width: 700px; margin: auto">
+        I help businesses turn ideas into high-performance apps. Proficient in
+        React Native, Firebase, Expo, REST APIs, and Git. I work fast, write
+        clean code, and deliver production-ready apps on time.
+      </p>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" data-aos="fade-left">
+      <h2 class="section-title">Services</h2>
+      <div class="cards">
+        <div class="card">
+          <i class="bx bx-mobile"></i>
+          <h4>App Development</h4>
+          <p>Cross-platform iOS & Android apps</p>
+        </div>
+        <div class="card">
+          <i class="bx bx-rocket"></i>
+          <h4>Deployment</h4>
+          <p>App Store & Play Store submission</p>
+        </div>
+        <div class="card">
+          <i class="bx bx-bug"></i>
+          <h4>Debug & Optimize</h4>
+          <p>Performance tuning and bug fixes</p>
+        </div>
+        <div class="card">
+          <i class="bx bx-support"></i>
+          <h4>Maintenance</h4>
+          <p>App updates & ongoing support</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" data-aos="fade-up">
+      <h2 class="section-title">Projects</h2>
+      <div class="cards">
+        <div class="card">
+          <i class="bx bx-cart"></i>
+          <h4>E-commerce App</h4>
+          <p>Built with Firebase & React Native</p>
+        </div>
+        <div class="card">
+          <i class="bx bx-health"></i>
+          <h4>Health Tracker</h4>
+          <p>Tracks daily fitness goals</p>
+        </div>
+        <div class="card">
+          <i class="bx bx-car"></i>
+          <h4>Ride Sharing</h4>
+          <p>Realtime location & fare calc</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" data-aos="fade-up">
+      <h2 class="section-title">Skills</h2>
+      <div class="tabs">
+        <button class="tab-btn active" onclick="showTab('rn')">
+          React Native
+        </button>
+        <button class="tab-btn" onclick="showTab('expo')">Expo CLI</button>
+        <button class="tab-btn" onclick="showTab('firebase')">Firebase</button>
+      </div>
+      <div class="tab-content" id="rn">
+        Building complex mobile apps using reusable components, navigation &
+        animations.
+      </div>
+      <div class="tab-content" id="expo" style="display: none">
+        Quick prototyping with OTA updates, splash screens, and push
+        notifications.
+      </div>
+      <div class="tab-content" id="firebase" style="display: none">
+        Authentication, Firestore, real-time database, and cloud messaging.
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" data-aos="fade-up">
+      <h2 class="section-title">Contact Me</h2>
+      <form>
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <textarea rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>&copy; 2025 Tamim Ahmed — All rights reserved.</footer>
+
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      AOS.init();
+
+      function showTab(tab) {
+        const contents = ["rn", "expo", "firebase"];
+        contents.forEach((id) => {
+          document.getElementById(id).style.display =
+            id === tab ? "block" : "none";
+          document
+            .querySelector(`.tab-btn[onclick="showTab('${id}')"]`)
+            .classList.toggle("active", id === tab);
+        });
+      }
+    </script>
+  </body>
+</html>

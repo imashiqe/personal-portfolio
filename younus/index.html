@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Younus</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container imagecontainer">
+        <h1 data-aos="fade-up" class="display-4 fw-bold">Hi, I'm Younus</h1>
+        <p data-aos="fade-up" data-aos-delay="200">
+          App Developer | Flutter Developer
+        </p>
+      </div>
+    </header>
+
+    <nav class="bg-dark py-3">
+      <div class="container text-center">
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+
+    <main class="container py-5">
+      <section id="about" class="py-5">
+        <h2 class="text-center mb-4" data-aos="fade-right">About Me</h2>
+        <p class="text-center text-light" data-aos="fade-left">
+          I am a passionate web designer and developer with experience in
+          building professional and visually appealing websites.
+        </p>
+      </section>
+
+      <section id="services" class="py-5">
+        <h2 class="text-center mb-4" data-aos="zoom-in">Services</h2>
+        <div class="row g-4">
+          <div class="col-md-3" data-aos="fade-up">
+            <div class="card-custom text-center">UI/UX Design</div>
+          </div>
+          <div class="col-md-3" data-aos="fade-up" data-aos-delay="100">
+            <div class="card-custom text-center">Web Development</div>
+          </div>
+          <div class="col-md-3" data-aos="fade-up" data-aos-delay="200">
+            <div class="card-custom text-center">Business Solutions</div>
+          </div>
+          <div class="col-md-3" data-aos="fade-up" data-aos-delay="300">
+            <div class="card-custom text-center">Profit Partners</div>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="py-5">
+        <h2 class="text-center mb-4" data-aos="fade-up">Projects</h2>
+        <div class="row g-4">
+          <div class="col-md-3" data-aos="zoom-in">
+            <div class="card-custom">SAAS Website Design</div>
+          </div>
+          <div class="col-md-3" data-aos="zoom-in" data-aos-delay="100">
+            <div class="card-custom">Workout App Design</div>
+          </div>
+          <div class="col-md-3" data-aos="zoom-in" data-aos-delay="200">
+            <div class="card-custom">Business Analytics</div>
+          </div>
+          <div class="col-md-3" data-aos="zoom-in" data-aos-delay="300">
+            <div class="card-custom">Dashboard Design</div>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills" class="py-5">
+        <h2 class="text-center mb-4" data-aos="fade-right">Skills</h2>
+        <div class="d-flex justify-content-center flex-wrap gap-3">
+          <span class="card-custom">Figma</span>
+          <span class="card-custom">WordPress</span>
+          <span class="card-custom">HTML/CSS</span>
+          <span class="card-custom">JavaScript</span>
+        </div>
+      </section>
+
+      <section id="contact" class="py-5">
+        <h2 class="text-center mb-4" data-aos="fade-left">Contact Me</h2>
+        <form
+          id="contactForm"
+          class="mx-auto"
+          style="max-width: 600px"
+          data-aos="fade-up"
+        >
+          <div class="mb-3">
+            <input
+              type="text"
+              id="name"
+              placeholder="Your Name"
+              required
+              class="form-control bg-dark text-white border-secondary"
+            />
+          </div>
+          <div class="mb-3">
+            <input
+              type="email"
+              id="email"
+              placeholder="Your Email"
+              required
+              class="form-control bg-dark text-white border-secondary"
+            />
+          </div>
+          <div class="mb-3">
+            <textarea
+              id="message"
+              placeholder="Your Message"
+              required
+              class="form-control bg-dark text-white border-secondary"
+            ></textarea>
+          </div>
+          <button
+            type="submit"
+            class="btn btn-teal w-100 bg-teal-500 text-white"
+          >
+            Send Message
+          </button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 John Lee. All rights reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      AOS.init();
+      document
+        .getElementById("contactForm")
+        .addEventListener("submit", function (e) {
+          e.preventDefault();
+          const name = document.getElementById("name").value;
+          alert(`Thank you, ${name}. Your message has been sent!`);
+          this.reset();
+        });
+    </script>
+  </body>
+</html>
